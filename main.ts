@@ -7,7 +7,7 @@ input.onButtonPressed(Button.B, function () {
 let minute = 0
 let hour = 0
 hour = 9
-minute = 43
+minute = 47
 timeanddate.setTime(hour, minute, 0, timeanddate.MornNight.AM)
 loops.everyInterval(60000, function () {
     minute = minute + 1
@@ -16,7 +16,7 @@ loops.everyInterval(60000, function () {
     }
 })
 basic.forever(function () {
-    if (hour == 10 && minute == 45) {
+    if (hour == 7 && minute == 0) {
         basic.showIcon(IconNames.Heart)
         music.playMelody("C5 B A G F E D C ", 120)
     }
